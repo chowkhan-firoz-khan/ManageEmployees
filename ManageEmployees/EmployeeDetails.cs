@@ -80,5 +80,10 @@ namespace ManageEmployees
             var id = selectedRow.Cells[0].Value.ToString();
             DeletetEmployeeByID(id);
         }
+
+        private void EmployeeDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

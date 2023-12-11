@@ -30,7 +30,6 @@
         {
             AddButton = new Button();
             dataGridView1 = new DataGridView();
-            btnSearch = new Button();
             btnDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -69,13 +68,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1447, 836);
             Controls.Add(btnDelete);
-            Controls.Add(btnSearch);
             Controls.Add(dataGridView1);
             Controls.Add(AddButton);
             Name = "EmployeeDetails";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "ManageEmployees";
             WindowState = FormWindowState.Maximized;
+            Load += EmployeeDetails_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -84,7 +83,6 @@
 
         private Button AddButton;
         private DataGridView dataGridView1;
-        private Button btnSearch;
         private Button btnDelete;
     }
 }
