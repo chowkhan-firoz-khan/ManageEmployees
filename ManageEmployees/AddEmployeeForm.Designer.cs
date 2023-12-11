@@ -36,8 +36,8 @@
             labelGender = new Label();
             txtStatus = new TextBox();
             label2 = new Label();
-            btnSave = new Button();
             btnReset = new Button();
+            btnSave = new Button();
             SuspendLayout();
             // 
             // labelName
@@ -104,15 +104,6 @@
             label2.TabIndex = 6;
             label2.Text = "Status";
             // 
-            // btnSave
-            // 
-            btnSave.Location = new Point(212, 302);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(132, 23);
-            btnSave.TabIndex = 8;
-            btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
-            // 
             // btnReset
             // 
             btnReset.Location = new Point(368, 302);
@@ -123,13 +114,23 @@
             btnReset.UseVisualStyleBackColor = true;
             btnReset.Click += btnReset_Click;
             // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(212, 302);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(132, 23);
+            btnSave.TabIndex = 10;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
+            // 
             // AddEmployeeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnReset);
             Controls.Add(btnSave);
+            Controls.Add(btnReset);
             Controls.Add(txtStatus);
             Controls.Add(label2);
             Controls.Add(txtGender);
@@ -154,7 +155,7 @@
         private Label labelGender;
         private TextBox txtStatus;
         private Label label2;
-        private Button btnSave;
         private Button btnReset;
+        private Button btnSave;
     }
 }

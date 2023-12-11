@@ -12,6 +12,11 @@ namespace ManageEmployees
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Adds entry in web-service.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void btnSave_Click(object sender, EventArgs e)
         {
             Employee newEmp = new Employee();
@@ -43,6 +48,12 @@ namespace ManageEmployees
 
         }
 
+
+        /// <summary>
+        /// Clears all the fields/properties on the form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtName.Text = "";
@@ -50,5 +61,6 @@ namespace ManageEmployees
             txtGender.Text = "";
             txtStatus.Text = "";
         }
+
     }
 }

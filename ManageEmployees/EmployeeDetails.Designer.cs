@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             AddButton = new Button();
-            ViewButton = new Button();
             dataGridView1 = new DataGridView();
             btnSearch = new Button();
+            btnDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -45,42 +45,32 @@
             AddButton.UseVisualStyleBackColor = true;
             AddButton.Click += AddButton_Click;
             // 
-            // ViewButton
-            // 
-            ViewButton.Location = new Point(397, 29);
-            ViewButton.Name = "ViewButton";
-            ViewButton.Size = new Size(106, 23);
-            ViewButton.TabIndex = 3;
-            ViewButton.Text = "View";
-            ViewButton.UseVisualStyleBackColor = true;
-            ViewButton.Click += ViewButton_Click;
-            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(200, 76);
+            dataGridView1.Location = new Point(237, 76);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(550, 550);
             dataGridView1.TabIndex = 4;
             // 
-            // btnSearch
+            // btnDelete
             // 
-            btnSearch.Location = new Point(551, 29);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(85, 23);
-            btnSearch.TabIndex = 5;
-            btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = true;
-            btnSearch.Click += btnSearch_Click;
+            btnDelete.Location = new Point(379, 29);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(106, 23);
+            btnDelete.TabIndex = 6;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // EmployeeDetails
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1447, 836);
+            Controls.Add(btnDelete);
             Controls.Add(btnSearch);
             Controls.Add(dataGridView1);
-            Controls.Add(ViewButton);
             Controls.Add(AddButton);
             Name = "EmployeeDetails";
             StartPosition = FormStartPosition.CenterScreen;
@@ -93,8 +83,8 @@
         #endregion
 
         private Button AddButton;
-        private Button ViewButton;
         private DataGridView dataGridView1;
         private Button btnSearch;
+        private Button btnDelete;
     }
 }
